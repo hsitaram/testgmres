@@ -1,0 +1,9 @@
+to compile:
+
+cd obj
+make
+
+to run:
+
+./testgmres (will run without preconditioning)
+./testgmre gs (with gauss seidel preconditioning)
