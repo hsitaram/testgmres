@@ -21,7 +21,7 @@ int main()
 	x  = new double[n]();
 	b  = new double[n]();
 
-	convdiff::findBcentral(b,n);
+	convdiff::findBupwind(b,n);
 
 	kspsolver.setkspvalues(m,n,it);
 	kspsolver.performgmres(b,x0,x,&convdiff::findAXupwind,&convdiff::noprecond);
