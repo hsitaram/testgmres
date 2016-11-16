@@ -142,7 +142,7 @@ contains
 			y(i)=beta_e1(i)
 
 			do j=i+1,m
-				y(i)=y(i)-Hmat(i,j)*y(i+1)
+				y(i)=y(i)-Hmat(i,j)*y(j)
 			enddo
 
 			y(i) = y(i)/Hmat(i,i)

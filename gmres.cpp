@@ -220,7 +220,7 @@ void solvergmres::m_leastsqminimize(double *y,double beta)
 
 		for(int j=i+1;j<m;j++)
 		{
-			y[i]=y[i]-m_Hessbergmat[i*m+j]*y[i+1];
+			y[i]=y[i]-m_Hessbergmat[i*m+j]*y[j];
 		}
 
 		y[i]=y[i]/m_Hessbergmat[i*m+i];
